@@ -1,5 +1,5 @@
 ﻿/* Name: Colin Weatherly
- * Date: 2/4/2022
+ * Date: 2/5/2022
  * File: PhoneTypeChecker.cs
  * IDE: Visual Studio 2019
  */
@@ -10,6 +10,13 @@ using System.Text;
 
 namespace Abstract_Factory
 {
+    enum Manufacturers
+    {
+        SAMSUNG,
+        HTC,
+        NOKIA
+    }
+
     class PhoneTypeChecker
     {
         public IPhoneFactory factory;
@@ -64,10 +71,4 @@ namespace Abstract_Factory
         }
     }
 
-    enum Manufacturers
-    {
-        SAMSUNG,
-        HTC,
-        NOKIA
-    }
 }
